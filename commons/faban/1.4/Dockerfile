@@ -12,7 +12,7 @@ ENV FABAN_HOME $BASE_PATH/faban
 ENV FABAN_OUTPUT_DIR $BASE_PATH/outputFaban
 
 RUN cd $BASE_PATH \
-	&& wget "faban.org/downloads/faban-kit-$FABAN_VERSION.tar.gz" \
+	&& wget "http://10.30.1.18:8080/datasets/cloudsuite/faban-kit-$FABAN_VERSION.tar.gz" \
 	&& tar -xzf faban-kit-$FABAN_VERSION.tar.gz
 
 ENV FABAN_USER faban

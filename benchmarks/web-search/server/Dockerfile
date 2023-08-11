@@ -23,7 +23,7 @@ ENV ZOOKEEPER_PORT $SOLR_PORT
 
 #INSTALL SOLR
 RUN cd $BASE_PATH \ 
-  && wget --progress=bar:force -O solr.tar.gz "https://archive.apache.org/dist/solr/solr/$SOLR_VERSION/solr-$SOLR_VERSION.tgz" \ 
+  && wget --progress=bar:force -O solr.tar.gz "http://10.30.1.18:8080/datasets/cloudsuite/solr-$SOLR_VERSION.tgz" \ 
   && tar -zxf solr.tar.gz \
   && rm solr.tar.gz
 

@@ -22,7 +22,7 @@ ENV NUM_AGENTS 1
 RUN apt update && apt install python3 -y
 
 RUN cd $BASE_PATH \
-	&& wget "archive.apache.org/dist/ant/binaries/apache-ant-$ANT_VERSION-bin.tar.gz" \
+	&& wget "http://10.30.1.18:8080/datasets/cloudsuite/apache-ant-$ANT_VERSION-bin.tar.gz" \
 	&& tar -zxf apache-ant-$ANT_VERSION-bin.tar.gz \
 	&& ln -s $BASE_PATH/apache-ant-$ANT_VERSION/ $ANT_HOME
 
